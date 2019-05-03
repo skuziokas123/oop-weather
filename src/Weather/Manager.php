@@ -5,6 +5,7 @@ namespace Weather;
 use Weather\Api\DataProvider;
 use Weather\Api\DbRepository;
 use Weather\Model\Weather;
+use Weather\Service\SourceChecker;
 
 class Manager
 {
@@ -12,6 +13,13 @@ class Manager
      * @var DataProvider
      */
     private $transporter;
+	private $transporterName;
+	private $checkedFromFile;
+	
+	public function __construct($transporterName, $checkedFromFile){
+		$this->transporterName=$transporterName;
+		$this->checkedFromFile=$checkedFromFile;
+	}
 
     public function getTodayInfo(): Weather
     {
@@ -20,17 +28,22 @@ class Manager
 
     public function getWeekInfo(): array
     {
-        return $this->getTransporter()->selectByRange(new \DateTime('midnight'), new \DateTime('+6 days midnight'));
+        return $this->getTransporter()->selectByRange(new \DateTime('midnight'), new \DateTime('+6 days'));
     }
 
     private function getTransporter()
     {
         if (null === $this->transporter) {
-            $this->transporter = new DbRepository();
+            
+			if($this->transporterName===SourceChecker::SOURCE_DBREPOSITORY){
+				$this->transporter = new DbRepository($this->checkedFromFile);
+			}
+			else{
+				$class="\Weather\Api\\".$this->transporterName;
+				$this->transporter = new $class();
+			}
         }
 
         return $this->transporter;
     }
 }
-
-

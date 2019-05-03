@@ -4,10 +4,27 @@ namespace Weather\Model;
 
 class Weather
 {
+	private $stringToFontAwesome = [
+		'Scattered Showers' => 'cloud-showers-heavy', 
+		'Breezy' => 'wind',
+		'Partly Cloudy' => 'cloud-sun',
+		'Mostly Cloudy' => 'cloud-sun',
+		'Sunny' => 'sun',
+		'Cloudy' => 'cloud'
+
+    ];
+	
     private $map = [
         1 => 'cloud',
         2 => 'cloud-rain',
-        3 => 'sun'
+        3 => 'sun',
+		4 => 'cloud-showers-heavy', //cloud-showers-heavy 
+		5 => 'wind', //wind 
+		6 => 'cloud-sun', //cloud-sun 
+		7 => 'soundcloud', //soundcloud 
+		//8 => 'Sunny', //sun
+		//9 => 'Cloudy' //cloud
+
     ];
 
     /**
@@ -97,5 +114,16 @@ class Weather
     public function getSkySymbol()
     {
         return $this->map[$this->sky];
+    }
+	
+	public function getSkySymbols(): array
+    {
+        return $this->map;
+    }
+	
+	//$stringToFontAwesome
+	public function getStringToFontAwesome(): array
+    {
+        return $this->stringToFontAwesome;
     }
 }

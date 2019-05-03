@@ -1,18 +1,18 @@
 [
-  {"date": "2019-04-21", "dayTemp": 15, "nightTemp": 3, "sky": 1},
-  {"date": "2019-04-22", "dayTemp": -17, "nightTemp": 5, "sky": 2},
-  {"date": "2019-04-23", "dayTemp": 5, "nightTemp": -3, "sky": 1},
-  {"date": "2019-04-24", "dayTemp": 8, "nightTemp": -2, "sky": 3},
-  {"date": "2019-04-25", "dayTemp": 12, "nightTemp": 0, "sky": 1},
-  {"date": "2019-04-26", "dayTemp": 15, "nightTemp": 6, "sky": 2},
-  {"date": "2019-04-27", "dayTemp": 17, "nightTemp": 4, "sky": 2},
-  {"date": "2019-04-28", "dayTemp": 20, "nightTemp": 11, "sky": 1},
-  {"date": "2019-04-29", "dayTemp": 21, "nightTemp": 12, "sky": 3},
-  {"date": "2019-04-30", "dayTemp": 22, "nightTemp": 13, "sky": 2},
-  {"date": "2019-05-01", "dayTemp": 23, "nightTemp": 14, "sky": 3},
-  {"date": "2019-05-02", "dayTemp": 24, "nightTemp": 15, "sky": 1},
-  {"date": "2019-05-03", "dayTemp": 25, "nightTemp": 16, "sky": 2},
-  {"date": "2019-05-04", "dayTemp": 26, "nightTemp": 17, "sky": 3},
-  {"date": "2019-05-05", "dayTemp": 27, "nightTemp": 18, "sky": 3}
+  {"date": "2019-05-03", "dayTemp": 15, "nightTemp": 3, "sky": 1},
+  {"date": "2019-05-04", "dayTemp": -17, "nightTemp": 5, "sky": 2},
+  {"date": "2019-05-05", "dayTemp": 5, "nightTemp": -3, "sky": 1},
+  {"date": "2019-05-06", "dayTemp": 8, "nightTemp": -2, "sky": 3},
+  {"date": "2019-05-07", "dayTemp": 12, "nightTemp": 0, "sky": 1},
+  {"date": "2019-05-08", "dayTemp": 15, "nightTemp": 6, "sky": 2},
+  {"date": "2019-05-09", "dayTemp": 17, "nightTemp": 4, "sky": 2},
+  {"date": "2019-05-10", "dayTemp": 20, "nightTemp": 11, "sky": 1},
+  {"date": "2019-05-11", "dayTemp": 21, "nightTemp": 12, "sky": 3},
+  {"date": "2019-05-12", "dayTemp": 22, "nightTemp": 13, "sky": 2},
+  {"date": "2019-05-13", "dayTemp": 23, "nightTemp": 14, "sky": 3},
+  {"date": "2019-05-14", "dayTemp": 24, "nightTemp": 15, "sky": 1},
+  {"date": "2019-05-15", "dayTemp": 25, "nightTemp": 16, "sky": 2},
+  {"date": "2019-05-16", "dayTemp": 26, "nightTemp": 17, "sky": 3},
+  {"date": "2019-05-17", "dayTemp": 27, "nightTemp": 18, "sky": 3}
 ]
 
