@@ -59,8 +59,6 @@ class DbRepository implements DataProvider
         foreach ($data as $item) {
 			
             $record = new Weather();
-			//if($this->checkedFromFile==="Weather.json"){
-			//FileChecker
 			if($this->checkedFromFile===FileChecker::FILE_WEATHER_JSON){
 				$this->prepareWeatherCustom($record, $item);
 			}
@@ -123,8 +121,6 @@ class DbRepository implements DataProvider
 		
 	}
 	
-	//FileChecker
-	//private function loadDataFromFile($fileName='Data.json'): array
 	private function loadDataFromFile($fileName): array
     {
 		$data = json_decode(
